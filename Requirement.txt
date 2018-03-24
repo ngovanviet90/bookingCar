@@ -1,0 +1,28 @@
++ Các chức năng cần làm:
+1) Tìm xe:
+- Chọn địa điểm A tới B, thời gian khởi hành, số người lớn và trẻ em
+=> Thực hiện tìm kiếm xe:
+Hiển thị thông tin tài xế,
+Số lượng xe, 
+Xe bao nhiêu chỗ, 
+Giá từ bao nhiêu, 
+Quảng đường dự kiến bao nhiêu km, 
+Thời gian chạy tới bao lâu
+
+2) Tìm tour:
+Tìm kiểm tour:
+- Hiển thị giá tiền cho mỗi người trong tour đó
+- Đặt tour: chọn ngày giờ khởi hành, số người, đón khách từ khách sạn nào, ghi chú
+- Thông tin chi tiết về tour: hình ảnh, giới thiệu tour
+- Lấy thông tin người đặt tour lưu lại
+- Đặt tour xong thì gửi mail cho bên đặt tour và admin
+
+3) Viết bài quảng cáo
+- Viết bài quảng cáo về du lịch
+
+4) Liên hệ:
+- Thông tin liên hệ
+- Form liên hệ
+
+5) Giới thiệu
+
