@@ -16,5 +16,9 @@ Route::get('/', function () {
 });
 
 Route::get('/home', function () {
-    return view('layout');
+    return view('home');
+});
+
+Route::get('/tour_details/hoi-an-to-ba-na.html', function () {
+    return view('tour_detail');
 });
