@@ -78,33 +78,15 @@ $(document).ready(function() {
     //AUTO COMPLETE CITY SELECT
     $('#select-city,#select-city-1,#select-city-2,#select-city-3,#select-city-4,#select-city-5.autocomplete').autocomplete({
         data: {
-            "New York": null,
-            "California": null,
-            "Illinois": null,
-            "Texas": null,
-            "Pennsylvania": null,
-            "San Diego": null,
-            "Los Angeles": null,
-            "Dallas": null,
-            "Austin": null,
-            "Columbus": null,
-            "Charlotte": null,
-            "El Paso": null,
-            "Portland": null,
-            "Las Vegas": null,
-            "Oklahoma City": null,
-            "Milwaukee": null,
-            "Tucson": null,
-            "Sacramento": null,
-            "Long Beach": null,
-            "Oakland": null,
-            "Arlington": null,
-            "Tampa": null,
-            "Corpus Christi": null,
-            "Greensboro": null,
-            "Jersey City": null
+            "Hội An": null,
+            "Đà Nẵng": null,
+            "Huế": null,
+            "Quảng Bình": null,
+            "Quảng Trị": null,
+            "Quảng Ngãi": null,
+            "Quy Nhơn": null
         },
-        limit: 8, // The max amount of results that can be shown at once. Default: Infinity.
+        limit: 7, // The max amount of results that can be shown at once. Default: Infinity.
         onAutocomplete: function(val) {
             // Callback function when value is autcompleted.
         },
@@ -182,7 +164,8 @@ $(function() {
         .datepicker({
             defaultDate: new Date(),
             changeMonth: true,
-            numberOfMonths: 1
+            numberOfMonths: 1,
+            minDate: new Date()
         })
         .on("change", function() {
             to.datepicker("option", "minDate", getDate(this));

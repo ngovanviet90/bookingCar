@@ -244,6 +244,13 @@
 /*-------------------------------------------------------*/
 
 @media screen and (max-width: 767px) {
+    .search-top{
+        margin-top: 55px;
+    }
+    .search-form{
+        width: 100%;
+        margin: 0 auto;
+    }
     .tb-space {
         padding: 75px 0px;
     }
@@ -575,6 +582,10 @@
 /*-------------------------------------------------------*/
 
 @media screen and (min-width: 767px) {
+    .search-form{
+        width: 80%;
+        margin: 0 auto;
+    }
     .dropdown:hover .dropdown-menu {
         display: block;
         margin-top: 0;
@@ -608,6 +619,13 @@
 /*-------------------------------------------------------*/
 
 @media screen and (max-width: 480px) {
+    .search-form{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .search-top{
+        margin-top: 55px;
+    }
     body {
         overflow-x: hidden !important;
     }

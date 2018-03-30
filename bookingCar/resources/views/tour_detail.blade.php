@@ -25,7 +25,7 @@
 						<li class="dl1">Location : Ba Na, Da Nang</li>
 						<li class="dl2">Price : $500</li>
 						<li class="dl3">Duration : 8 Nights/ 9 Days</li>
-						<li class="dl4"><a href="booking.html">Book Now</a> </li>
+						<li class="dl4"><a href="/tourDetails/hoi-an-to-ba-na/booking.html">Book Now</a> </li>
 					</ul>
 				</div>
 			</div>
@@ -285,7 +285,7 @@
 						<h4>$500<span class="n-td">
 								<span class="n-td-1">$800</span>
 								</span>
-							</h4> <a href="booking.html" class="link-btn">Book Now</a> </div>
+							</h4> <a href="/tourDetails/hoi-an-to-ba-na/booking.html" class="link-btn">Book Now</a> </div>
 					<!--====== TRIP INFORMATION ==========-->
 					<div class="tour_right tour_incl tour-ri-com">
 						<h3>Trip Information</h3>
@@ -312,7 +312,7 @@
 						<h3>Help & Support</h3>
 						<div class="tour_help_1">
 							<h4 class="tour_help_1_call">Call Us Now</h4>
-							<h4><i class="fa fa-phone" aria-hidden="true"></i> 10-800-123-000</h4> </div>
+							<h4><i class="fa fa-phone" aria-hidden="true"></i> 0935147435</h4> </div>
 					</div>
 					<!--====== PUPULAR TOUR PACKAGES ==========-->
 					<div class="tour_right tour_rela tour-ri-com">

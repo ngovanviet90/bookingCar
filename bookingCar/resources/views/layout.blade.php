@@ -37,7 +37,7 @@
             <div class="ed-mob-menu-con">
                 <div class="ed-mm-left">
                     <div class="wed-logo">
-                        <a href="/home"><img src="{{asset('best_travel_hoian/images/logo.png')}}" alt="" />
+                        <a href="/"><img src="{{asset('best_travel_hoian/images/logo.png')}}" alt="" />
 						</a>
                     </div>
                 </div>
@@ -48,12 +48,12 @@
                             <a href="#!" class="ed-mi-close"><i class="fa fa-times"></i></a>
                             <h4>Car Travel Hoi An</h4>
                             <ul>
-                                <li><a href="booking-all.html">Home</a></li>
-                                <li><a href="booking-all.html">Top Sight Seeings</a></li>
-                                <li><a href="booking-tour-package.html">News</a></li>
-                                <li><a href="booking-hotel.html">Booking Search</a></li>
-                                <li><a href="booking-car-rentals.html">About us</a></li>
-                                <li><a href="booking-flight.html">Contact us</a></li>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/carServices.html">Car Services</a></li>
+                                <li><a href="/dailyTours.html">Daily Tours</a></li>
+                                <!--<li><a href="/priceList.html">Price List</a></li>-->
+                                <li><a href="/about.html">About us</a></li>
+                                <li><a href="/contact.html">Contact us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -74,13 +74,15 @@
                                 </li>
                                 <li><a href="#">Phone: +84909.999.666</a>
                                 </li>
+                                <li><a href="#">Email: ngovanviet90@gmail.com</a>
+                                </li>
                             </ul>
                         </div>
                         <div class="ed-com-t1-right">
                             <ul>
-                                <li><img src="{{asset('best_travel_hoian/images/english.png')}}" alt="English" title="English"></a>
+                                <li><img src="{{asset('best_travel_hoian/images/english.png')}}" style="width: 32px;" alt="English" title="English"></a>
                                 </li>
-                                <li><img src="{{asset('best_travel_hoian/images/vietnam.png')}}" alt="Vietnamese" title="Vietnamese"></a>
+                                <li><img src="{{asset('best_travel_hoian/images/vietnam.png')}}" style="width: 32px;" alt="Vietnamese" title="Vietnamese"></a>
                                 </li>
                             </ul>
                         </div>
@@ -105,69 +107,17 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="wed-logo">
-                            <a href="/home"><img src="{{asset('best_travel_hoian/images/logo.png')}}" alt="" />
+                            <a href="/"><img src="{{asset('best_travel_hoian/images/logo.png')}}" alt="" />
                             </a>
                         </div>
                         <div class="main-menu">
                             <ul>
-                                <li><a href="/home">Home</a>
-                                </li>
-                                <li class="admi-menu">
-                                    <a href="#" class="mm-arr">Top Sight Seeings</a>
-                                    <!-- MEGA MENU 1 -->
-                                    <div class="mm-pos">
-                                        <div class="admi-mm m-menu">
-                                            <div class="m-menu-inn">
-                                                <div class="mm2-com mm1-com mm1-s1">
-                                                    <div class="ed-course-in">
-                                                        <a class="course-overlay" href="#">
-                                                            <img src="{{asset('best_travel_hoian/images/sight/1.jpg')}}" alt="">
-                                                            <span>Ba Na Hills</span>
-                                                        </a>
-                                                    </div>
-                                                    <p>Donec lacus libero, rutrum ac sollicitudin sed, mattis non eros. Vestibulum congue nec eros quis lacinia. Mauris non tincidunt lectus. Nulla mollis, orci vitae accumsan rhoncus.</p>
-                                                    <a href="#" class="mm-r-m-btn">Read more</a>
-                                                </div>
-                                                <div class="mm2-com mm1-com mm1-s1">
-                                                    <div class="ed-course-in">
-                                                        <a class="course-overlay" href="#">
-                                                            <img src="{{asset('best_travel_hoian/images/sight/2.jpg')}}" alt="">
-                                                            <span>Asia Pack</span>
-                                                        </a>
-                                                    </div>
-                                                    <p>Donec lacus libero, rutrum ac sollicitudin sed, mattis non eros. Vestibulum congue nec eros quis lacinia. Mauris non tincidunt lectus. Nulla mollis, orci vitae accumsan rhoncus.</p>
-                                                    <a href="#" class="mm-r-m-btn">Read more</a>
-                                                </div>
-                                                <div class="mm2-com mm1-com mm1-s1">
-                                                    <div class="ed-course-in">
-                                                        <a class="course-overlay" href="#">
-                                                            <img src="{{asset('best_travel_hoian/images/sight/3.jpg')}}" alt="">
-                                                            <span>Hoi An City</span>
-                                                        </a>
-                                                    </div>
-                                                    <p>Donec lacus libero, rutrum ac sollicitudin sed, mattis non eros. Vestibulum congue nec eros quis lacinia. Mauris non tincidunt lectus. Nulla mollis, orci vitae accumsan rhoncus.</p>
-                                                    <a href="#" class="mm-r-m-btn">Read more</a>
-                                                </div>
-                                                <div class="mm2-com mm1-com mm1-s4">
-                                                    <div class="ed-course-in">
-                                                        <a class="course-overlay" href="#">
-                                                            <img src="{{asset('best_travel_hoian/images/sight/4.jpg')}}" alt="">
-                                                            <span>Hue City</span>
-                                                        </a>
-                                                    </div>
-                                                    <p>Donec lacus libero, rutrum ac sollicitudin sed, mattis non eros. Vestibulum congue nec eros quis lacinia. Mauris non tincidunt lectus. Nulla mollis, orci vitae accumsan rhoncus.</p>
-                                                    <a href="#" class="mm-r-m-btn">Read more</a>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li><a href="topTourPackages.html">Top Tour Packages</a></li>
-                                <li><a href="news.html">News</a></li>
-                                <li><a href="bookingSearch.html">Booking Search</a></li>
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="contact.html">Contact us</a>
+                                <li><a href="/" class="active">Home</a></li>
+                                <li><a href="/carServices.html">Car Services</a></li>
+                                <li><a href="/dailyTours.html">Daily Tours</a></li>
+                                <!--<li><a href="/priceList.html">Price List</a></li>-->
+                                <li><a href="/about.html">About Us</a></li>
+                                <li><a href="/contact.html">Contact us</a>
                                 </li>
                             </ul>
                         </div>
@@ -175,6 +125,31 @@
                 </div>
             </div>
         </div>
+        <!-- TOP SEARCH BOX -->
+            <div class="search-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="search-form">
+    						<form class="tourz-search-form" method="get" action="/searchTours">
+    							<div class="input-field">
+    								<input type="text" id="select-city" name="city" value="{{(isset($_GET['city']))?$_GET['city']:""}}" class="autocomplete">
+    								<label for="select-city">Enter city</label>
+    							</div>
+    							<div class="input-field">
+    								<input type="text" id="select-search" name="keyword" value="{{(isset($_GET['keyword']))?$_GET['keyword']:""}}" class="autocomplete">
+    								<label for="select-search" class="search-hotel-type">Search over a million tour and travels, sight seeings, hotels and more</label>
+    							</div>
+    							<div class="input-field">
+    								<input type="submit" value="search" class="waves-effect waves-light tourz-sear-btn"> </div>
+    						</form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    		<!-- END TOP SEARCH BOX -->
+    </section>
     <!--END HEADER SECTION-->
     @yield('content')
     <!--====== TIPS BEFORE TRAVEL ==========-->
@@ -256,7 +231,7 @@
                             <li><a href="/tour_details/hoi-an-to-ba-na.html">Tour Cù Lao Chàm</a> </li>
                             <li><a href="/tour_details/hoi-an-to-ba-na.html">Tour Đà Nẵng (Ngũ Hành Sơn - Hội An - Bà Nà - Huế)</a> </li>
                             <li><a href="/tour_details/hoi-an-to-ba-na.html">Tour Đà Nẵng (Hội An - Bà Nà - Huế City - Quảng Bình)</a> </li>
-                            <li><a href="/tour_details/hoi-an-to-ba-na.html">Tour Bà Nà Hills</a> </li>
+                            <li><a href="/tour_details/hoi-an-to-ba-na.html">Tour Hội An - Bà Nà Hills</a> </li>
                             <li><a href="/tour_details/hoi-an-to-ba-na.html">Tour suối khoáng nóng núi Thần Tài</a> </li>
                             <li><a href="/tour_details/hoi-an-to-ba-na.html">Tour Đà Nẵng - Huế</a> </li>
                             <li><a href="/tour_details/hoi-an-to-ba-na.html">Tour Bạch Mã</a> </li>
@@ -334,5 +309,18 @@
     <script src="{{asset('best_travel_hoian/js/materialize.min.js')}}"></script>
     <script src="{{asset('best_travel_hoian/js/jquery-ui.js')}}"></script>
     <script src="{{asset('best_travel_hoian/js/custom.js')}}"></script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5abdd98a4b401e45400e3319/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
 </body>
 </html>

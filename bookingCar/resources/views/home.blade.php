@@ -7,8 +7,7 @@
 				<div class="row">
 					<div class="col-md-6">
 					<div class="v2-ho-se-ri">
-						<h5>World's leading tour and travels template</h5>
-						<h1>Car Rentals to you discovery!</h1>
+						<h1>Choose a car for your exploration</h1>
 						<p>Experience the various exciting tour and travel packages and Make hotel reservations, find vacation packages, search cheap hotels and events</p>
 						<div class="tourz-hom-ser v2-hom-ser">
 							<ul>
@@ -16,7 +15,7 @@
 									<a href="booking-car-rentals.html" class="active waves-effect waves-light btn-large tourz-pop-ser-btn"><img src="{{asset('best_travel_hoian/images/icon/30.png')}}" alt=""> Car Rentals</a>
 								</li>
 								<li>
-									<a href="booking-tour-package.html" class="waves-effect waves-light btn-large tourz-pop-ser-btn"><img src="{{asset('best_travel_hoian/images/icon/2.png')}}" alt=""> Tour</a>
+									<a href="/listTours.html" class="waves-effect waves-light btn-large tourz-pop-ser-btn"><img src="{{asset('best_travel_hoian/images/icon/2.png')}}" alt=""> Tour</a>
 								</li>
 							</ul>
 						</div>
@@ -24,54 +23,76 @@
 					</div>
 					<div class="col-md-6">
 					<div class="">
-						<form class="v2-search-form">
+						<form class="v2-search-form" method="post">
+                            {{csrf_field()}}
 							<div class="row">
-								<div class="input-field col s12">
-									<input type="text" id="select-city" class="autocomplete">
-									<label for="select-city">From place</label>
+                                <div class="input-field col s12">
+									<input type="text" id="fullname" class="autocomplete">
+									<label for="fullname" title="Fullname">Fullname</label>
+								</div>
+                                <div class="input-field col s12">
+									<input type="text" id="phone" class="autocomplete">
+									<label for="phone" title="Phone">Phone</label>
+								</div>
+                                <div class="input-field col s12">
+									<input type="text" id="email" class="autocomplete">
+									<label for="email" title="Email">Email</label>
 								</div>
 								<div class="input-field col s12">
-									<input type="text" id="select-city" class="autocomplete">
-									<label for="select-city">To place</label>
+									<input type="text" id="from_place" class="autocomplete">
+									<label for="from_place"  title="From place">From place</label>
+								</div>
+								<div class="input-field col s12">
+									<input type="text" id="to_place" class="autocomplete">
+									<label for="to_place" title="To place">To place</label>
 								</div>
 							</div>
 							<div class="row">
 								<div class="input-field col s6">
 									<input type="text" id="from" name="from">
-									<label for="from">Start Date</label>
+									<label for="from" title="Start Date">Start Date</label>
+								</div>
+                                <div class="input-field col s6">
+                                    <select name="car_type" title="Car Type">
+                                        <option value="" disabled selected>Car Type</option>
+                                        <option value="1">4 seat</option>
+                                        <option value="2">7 seat</option>
+                                        <option value="3">16 seat</option>
+                                    </select>
+                                </div>
+							</div>
+							<div class="row">
+								<div class="input-field col s6">
+									<select name="adults" title="No of adults">
+										<option value="" disabled selected>No of adults</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="1">4</option>
+										<option value="1">5</option>
+										<option value="1">6</option>
+									</select>
 								</div>
 								<div class="input-field col s6">
-									<input type="text" id="to" name="to">
-									<label for="to">End Date</label>
+									<select>
+										<option value="" disabled selected>No of childrens</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="1">4</option>
+										<option value="1">5</option>
+										<option value="1">6</option>
+									</select>
 								</div>
 							</div>
-								<div class="row">
-									<div class="input-field col s6">
-										<select>
-											<option value="" disabled selected>No of adults</option>
-											<option value="1">1</option>
-											<option value="2">2</option>
-											<option value="3">3</option>
-											<option value="1">4</option>
-											<option value="1">5</option>
-											<option value="1">6</option>
-										</select>
-									</div>
-									<div class="input-field col s6">
-										<select>
-											<option value="" disabled selected>No of childrens</option>
-											<option value="1">1</option>
-											<option value="2">2</option>
-											<option value="3">3</option>
-											<option value="1">4</option>
-											<option value="1">5</option>
-											<option value="1">6</option>
-										</select>
-									</div>
-								</div>
+                            <div class="row">
+								<div class="input-field col s12">
+                                    <textarea name="emess" rows="2" id="text-comment" placeholder="Enter your message"></textarea>
+                                </div>
+                            </div>
 							<div class="row">
 								<div class="input-field col s12">
-									<input type="submit" value="search" class="waves-effect waves-light tourz-sear-btn v2-ser-btn">
+									<input type="submit" value="book a car" class="waves-effect waves-light tourz-sear-btn v2-ser-btn">
 								</div>
 							</div>
 						</form>
@@ -107,7 +128,7 @@
                         <div class="b_pack rows">
                             <!-- TOUR TITLE -->
                             <div class="col-md-8 col-sm-8">
-                                <h4><a href="/tour_details/hoi-an-to-ba-na.html">Rio de Janeiro<span class="v_pl_name">(Brazil)</span></a></h4>
+                                <h4><a href="/tourDetails/hoi-an-to-ba-na.html">Cu Lao Cham<span class="v_pl_name">(Brazil)</span></a></h4>
                             </div>
                             <!-- TOUR ICONS -->
                             <div class="col-md-4 col-sm-4 pack_icon">
@@ -138,7 +159,7 @@
                         <div class="b_pack rows">
                             <!-- TOUR TITLE -->
                             <div class="col-md-8 col-sm-8">
-                                <h4><a href="/tour_details/hoi-an-to-ba-na.html">Paris<span class="v_pl_name">(England)</span></a></h4>
+                                <h4><a href="/tourDetails/hoi-an-to-ba-na.html">Hoi An<span class="v_pl_name">(England)</span></a></h4>
                             </div>
                             <!-- TOUR ICONS -->
                             <div class="col-md-4 col-sm-4 pack_icon">
@@ -164,7 +185,7 @@
                         <div class="v_place_img"><img src="{{asset('best_travel_hoian/images/t2.png')}}" alt="Tour Booking" title="Tour Booking" /> </div>
                         <div class="b_pack rows">
                             <div class="col-md-8 col-sm-8">
-                                <h4><a href="/tour_details/hoi-an-to-ba-na.html">South India<span class="v_pl_name">(India)</span></a></h4>
+                                <h4><a href="/tourDetails/hoi-an-to-ba-na.html">Ba Na Hills<span class="v_pl_name">(India)</span></a></h4>
                             </div>
                             <div class="col-md-4 col-sm-4 pack_icon">
                                 <ul>
@@ -189,7 +210,7 @@
                         <div class="v_place_img"><img src="{{asset('best_travel_hoian/images/t3.png')}}" alt="Tour Booking" title="Tour Booking" /> </div>
                         <div class="b_pack rows">
                             <div class="col-md-8 col-sm-8">
-                                <h4><a href="/tour_details/hoi-an-to-ba-na.html">The Great Wall<span class="v_pl_name">(China)</span></a></h4>
+                                <h4><a href="/tourDetails/hoi-an-to-ba-na.html">Asia Pack<span class="v_pl_name">(China)</span></a></h4>
                             </div>
                             <div class="col-md-4 col-sm-4 pack_icon">
                                 <ul>
@@ -214,7 +235,7 @@
                         <div class="v_place_img"><img src="{{asset('best_travel_hoian/images/t4.png')}}" alt="Tour Booking" title="Tour Booking" /> </div>
                         <div class="b_pack rows">
                             <div class="col-md-8 col-sm-8">
-                                <h4><a href="/tour_details/hoi-an-to-ba-na.html">Nail Island<span class="v_pl_name">(Andaman)</span></a></h4>
+                                <h4><a href="/tourDetails/hoi-an-to-ba-na.html">Hue City<span class="v_pl_name">(Andaman)</span></a></h4>
                             </div>
                             <div class="col-md-4 col-sm-4 pack_icon">
                                 <ul>
@@ -239,7 +260,7 @@
                         <div class="v_place_img"><img src="{{asset('best_travel_hoian/images/t6.png')}}" alt="Tour Booking" title="Tour Booking" /> </div>
                         <div class="b_pack rows">
                             <div class="col-md-8 col-sm-8">
-                                <h4><a href="/tour_details/hoi-an-to-ba-na.html">Mauritius<span class="v_pl_name">(Indiana)</span></a></h4>
+                                <h4><a href="/tourDetails/hoi-an-to-ba-na.html">Phong Nha Ke Bang<span class="v_pl_name">(Indiana)</span></a></h4>
                             </div>
                             <div class="col-md-4 col-sm-4 pack_icon">
                                 <ul>
